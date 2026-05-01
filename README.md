@@ -42,7 +42,7 @@
 **Кроки:**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/keyflip.git
+git clone https://github.com/voipoddsns/KeyFlip.git
 cd keyflip
 ```
 
