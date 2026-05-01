@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Вибір мови -->
+    <RadioGroup
+        android:id="@+id/rgLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <RadioButton
+            android:id="@+id/rbUkrainian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🇺🇦 Українська"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbRussian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🇷🇺 Російська"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <!-- Поле вводу -->
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Введи текст на кириличній розкладці..."
+        android:inputType="textMultiLine"
+        android:textSize="16sp"/>
+
+    <!-- Кнопка -->
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Конвертувати → QWERTY"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Результат -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:hint="Результат з'явиться тут..."
+        android:textIsSelectable="true"/>
+
+    <!-- Копіювати -->
+    <Button
+        android:id="@+id/btnCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Копіювати результат"
+        android:visibility="gone"/>
+
+</LinearLayout>
